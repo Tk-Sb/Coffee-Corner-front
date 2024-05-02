@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="light-style.css">
+  <link rel="stylesheet" href="about-style.css">
+</head>
+<body onload="aboutLoad()">
+  <svg class="decoration" id="top" viewBox="0 0 856 527" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="decoration-color" id="top-color" d="M1.10994 -73.4131C345.462 418.207 957.267 298.182 985.548 256.444C1106.46 237.311 1006.05 145.688 950.984 261.913C967.91 368.88 984.294 509.539 877.327 526.466C405.84 492.341 -9.8529 65.7656 1.10994 -73.4131Z" fill="rgba(214, 197, 170, 1)"/></svg>
+  <svg class="decoration" id="top-new" viewBox="0 0 1043 601" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="decoration-color" id="top-color" d="M1.10979 0.586918C345.462 492.207 957.267 372.182 985.548 330.444C1106.46 311.311 1006.05 219.688 950.984 335.913C967.91 442.88 984.294 583.539 877.327 600.466C405.84 566.341 -9.85303 139.766 1.10979 0.586918Z" fill="rgba(214, 197, 170, 1)"/></svg>
+  <svg class="decoration" id="bot-new" viewBox="0 0 817 605" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="decoration-color" id="bot-color" d="M814.336 604.5C596.154 157.5 79.8363 176.5 51.2818 207C-50.1637 207 20.1543 295 80.2818 207C80.2818 117.254 85.09 0 174.836 0C556.336 89 841.336 492 814.336 604.5Z" fill="rgba(214, 197, 170, 1)"/></svg>
+  <svg class="decoration" id="bot-corner-new" viewBox="0 0 817 605" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="decoration-color" id="bot-color" d="M814.336 604.5C596.154 157.5 79.8363 176.5 51.2818 207C-50.1637 207 20.1543 295 80.2818 207C80.2818 117.254 85.09 0 174.836 0C556.336 89 841.336 492 814.336 604.5Z" fill="rgba(214, 197, 170, 1)"/></svg>
+  
+  <p class="" id="back-text">Coffee<br>Corner</p>
+
+  <header>
+    <div id="nav-bar">
+      <h1 class="nav-text">Coffee Corner</h1>
+      <nav>
+        <h3 class="nav-text" onclick="exitAbout('home')" id="home">Home</h3>
+        <h3 class="nav-text" onclick="exitAbout('menu')" id="menu">Menu</h3>
+        <h3 class="nav-text" id="about">About us</h3>
+        <h3 class="nav-text" onclick="exitAbout('contact')" id="contact">Contact us</h3>
+      </nav>
+      <hr id="nav-line" style="width: 110px; height: 5px; background-color: rgba(0, 0, 0, 0.8); position: absolute; top: 55px; left: 895px;">
+      <div id="rating">
+        <svg width="30" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#8C6447" stroke="black" stroke-width="3"/></svg>
+        <svg width="30" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#8C6447" stroke="black" stroke-width="3"/></svg>
+        <svg width="30" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#8C6447" stroke="black" stroke-width="3"/></svg>
+        <svg width="30" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#8C6447" stroke="black" stroke-width="3"/></svg>
+        <svg width="30" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#8C6447" fill-opacity="0.25" stroke="black" stroke-width="3"/></svg>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="goes-left">
+      <div class="text-box">
+        <h1 class="text">Our Story</h1>
+        <p>
+          Coffee Corner was born out of a love for the coffee community. Our founders, two coffee enthusiasts dreamt of creating a space where people could come together over a cup of coffee. In 2020, that dream became a reality when they opened the doors to Coffee Corner.
+        </p>
+      </div>
+      <div class="text-box">
+        <h1 class="text">Our Mission</h1>
+        <p>
+          Is to serve high-quality coffee and pastries in a welcoming environment. We believe that a café should be more than just a place to grab a quick coffee - it should be a community hub where people can connect, share ideas, and create memories.
+        </p>
+      </div>
+      <div class="text-box">
+        <h1 class="text">Our Coffee</h1>
+        <p>
+          We take pride in serving coffee that is ethically sourced and expertly brewed. Our baristas are trained to craft each cup with care and precision, ensuring that every sip is a delightful experience.
+        </p>
+      </div>
+      <div class="text-box">
+        <h1 class="text">Our Team</h1>
+        <p>
+          Our team is made up of passionate individuals who love what they do. From our friendly baristas to our skilled bakers, each member of our team contributes to creating a unique and enjoyable experience for our customers.
+        </p>
+      </div>
+      <div class="text-box">
+        <h1 class="text">Our Community</h1>
+        <p>
+          Since our opening, we have been overwhelmed by the support from our local community. We strive to give back by hosting community events, supporting local artists, and partnering with local businesses.
+        </p>
+      </div>
+    </div>
+  </main>
+  
+  
+  
+  
+  
+  <script src="index.js"></script>
+</body>
+</html>

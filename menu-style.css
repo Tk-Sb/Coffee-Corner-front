@@ -1,0 +1,40 @@
+body{
+    overflow: hidden;
+}
+#best-sellers{
+    position: absolute;
+    left: -850px;
+    top: 150px;
+}
+#catagories{
+    position: absolute;
+    display: flex;
+    border-radius: 25px;
+    padding: 10px;
+    justify-content: space-around;
+    width: 600px;
+    background-color: rgba(45, 29, 19, 0.5);
+    top: 200px;
+    right: -1357px;
+}
+#coffees, #pastries, #sandwiches{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+#catagories h2{
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+}
+.img{
+    width: 300px;
+}
+#items{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 5000px;
+    top: 300px;
+    left: 1786px;
+}

@@ -1,0 +1,62 @@
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 150vh;
+}
+#top-new{
+    left: 50vw;
+    bottom: -600px;
+    width: 900px;
+}
+#bot-new{
+    top: 57vh;
+    left: -100px;
+    width: 600px
+}
+#bot-corner-new{
+    top: 175vh;
+    left: -100px;
+    width: 600px
+}
+.goes-left{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 1000px;
+    height: 200px;
+    top: 250px;
+    left: -1375px;
+}
+#feedback-box{
+    margin-left: 125px;
+    margin-bottom: 50px;
+}
+#feedback{
+    padding: 40px;
+    width: 1001px;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 135px;
+    line-height: 75px;
+}
+#profile-pic{
+    position: absolute;
+    top: -40px;
+    left: 597px;
+    width: 75px;
+}
+#customer-rating{
+    position: absolute;
+    top: 375px;
+    left: 503px;
+}
+.text{
+    position: relative;
+}
+.text-box p{
+    font-size: 20px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}

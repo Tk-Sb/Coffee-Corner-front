@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="light-style.css">
+  <link rel="stylesheet" href="contact-style.css">
+</head>
+<body onload="aboutLoad()">
+  <svg class="decoration" id="top" viewBox="0 0 856 527" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="decoration-color" id="top-color" d="M1.10994 -73.4131C345.462 418.207 957.267 298.182 985.548 256.444C1106.46 237.311 1006.05 145.688 950.984 261.913C967.91 368.88 984.294 509.539 877.327 526.466C405.84 492.341 -9.8529 65.7656 1.10994 -73.4131Z" fill="rgba(214, 197, 170, 1)"/></svg>
+  <svg class="decoration" id="top-new" viewBox="0 0 1043 601" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="decoration-color" id="top-color" d="M1.10979 0.586918C345.462 492.207 957.267 372.182 985.548 330.444C1106.46 311.311 1006.05 219.688 950.984 335.913C967.91 442.88 984.294 583.539 877.327 600.466C405.84 566.341 -9.85303 139.766 1.10979 0.586918Z" fill="rgba(214, 197, 170, 1)"/></svg>
+  <svg class="decoration" id="bot-new" viewBox="0 0 817 605" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="decoration-color" id="bot-color" d="M814.336 604.5C596.154 157.5 79.8363 176.5 51.2818 207C-50.1637 207 20.1543 295 80.2818 207C80.2818 117.254 85.09 0 174.836 0C556.336 89 841.336 492 814.336 604.5Z" fill="rgba(214, 197, 170, 1)"/></svg>
+  <svg class="decoration" id="bot-corner-new" viewBox="0 0 817 605" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="decoration-color" id="bot-color" d="M814.336 604.5C596.154 157.5 79.8363 176.5 51.2818 207C-50.1637 207 20.1543 295 80.2818 207C80.2818 117.254 85.09 0 174.836 0C556.336 89 841.336 492 814.336 604.5Z" fill="rgba(214, 197, 170, 1)"/></svg>
+  
+  <p class="" id="back-text">Coffee<br>Corner</p>
+
+  <header>
+    <div id="nav-bar">
+      <h1 class="nav-text">Coffee Corner</h1>
+      <nav>
+        <h3 class="nav-text" onclick="exitContact('home')" id="home">Home</h3>
+        <h3 class="nav-text" onclick="exitContact('menu')" id="menu">Menu</h3>
+        <h3 class="nav-text" onclick="exitContact('about')" id="about">About us</h3>
+        <h3 class="nav-text" id="contact">Contact us</h3>
+      </nav>
+      <hr id="nav-line" style="width: 120px; height: 5px; background-color: rgba(0, 0, 0, 0.8); position: absolute; top: 55px; left: 1085px;">
+      <div id="rating">
+        <svg width="30" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#8C6447" stroke="black" stroke-width="3"/></svg>
+        <svg width="30" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#8C6447" stroke="black" stroke-width="3"/></svg>
+        <svg width="30" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#8C6447" stroke="black" stroke-width="3"/></svg>
+        <svg width="30" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#8C6447" stroke="black" stroke-width="3"/></svg>
+        <svg width="30" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#8C6447" fill-opacity="0.25" stroke="black" stroke-width="3"/></svg>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="goes-left">
+      <svg id="profile-pic" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="42.5" cy="42.5" r="40" fill="#622727" stroke="white" stroke-width="5"/></svg>
+      <div id="feedback-box">
+        <img src="feedback-box.svg" alt="">
+        <p id="feedback">
+          I absolutely love this place, the latte is amazing, the espresso is also great. <br>
+          I can’t pass my day without a cup of  corner’s coffee.
+        </p>
+        <div id="customer-rating">
+          <svg width="50" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#D6C5AA" stroke="black" stroke-width="3"/></svg>
+          <svg width="50" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#D6C5AA" stroke="black" stroke-width="3"/></svg>
+          <svg width="50" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#D6C5AA" stroke="black" stroke-width="3"/></svg>
+          <svg width="50" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#D6C5AA" stroke="black" stroke-width="3"/></svg>
+          <svg width="50" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#D6C5AA" fill-opacity="0.25" stroke="black" stroke-width="3"/></svg>
+        </div>
+      </div>
+      <div class="text-box">
+        <h1 class="text">Find us at</h1>
+        <p>
+          123 coffee lane, Brew City, BC 12345
+        </p>
+      </div>
+      <div class="text-box">
+        <h1 class="text">At any shown time</h1>
+        <p>
+          Monday - Friday: 7:00 AM - 7:00 PM <br> Saturday - Sunday: 8:00 AM - 5:00 PM
+        </p>
+      </div>
+      <div class="text-box">
+        <h1 class="text">Get in touch</h1>
+        <p>
+          Phone: (123) 456-7890
+          <br>
+          Email: CoffeeCorner@gamil.com
+        </p>
+      </div>
+    </div>
+  </main>
+  
+  
+  
+  
+  
+  <script src="index.js"></script>
+</body>
+</html>

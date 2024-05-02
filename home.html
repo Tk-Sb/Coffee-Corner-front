@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="dark-style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body onload="homeLoad()">
+  <svg class="decoration" id="bot"  viewBox="0 0 656 472" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="decoration-color" id="bot-color" d="M653.682 604.5C435.5 157.5 -80.818 176.5 -109.373 207C-210.818 207 -140.5 295 -80.3725 207C-80.3725 117.254 -75.5643 0 14.182 0C395.682 89 680.682 492 653.682 604.5Z" fill="#261D14"/></svg>
+  <svg class="decoration" id="top" viewBox="0 0 856 527" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="decoration-color" id="top-color" d="M1.10994 -73.4131C345.462 418.207 957.267 298.182 985.548 256.444C1106.46 237.311 1006.05 145.688 950.984 261.913C967.91 368.88 984.294 509.539 877.327 526.466C405.84 492.341 -9.8529 65.7656 1.10994 -73.4131Z" fill="#261D14"/></svg>
+  <p class="" id="back-text">Coffee<br>Corner</p>
+  <img src="coffee.svg" alt="cup of coffee" class="goes-right" id="coffee">
+  <header>
+    <div id="nav-bar">
+      <h1 class="nav-text">Coffee Corner</h1>
+      <nav>
+        <h3 class="nav-text" id="home">Home</h3>
+        <h3 class="nav-text" onclick="exitHome('menu')" id="menu">Menu</h3>
+        <h3 class="nav-text" onclick="exitHome('about')" id="about">About us</h3>
+        <h3 class="nav-text" onclick="exitHome('contact')" id="contact">Contact us</h3>
+      </nav>
+      <hr id="nav-line" style="width: 75px; height: 5px; background-color: rgba(255, 255, 255, 0.8); position: absolute; top: 55px; left: 593px;">
+      <div id="rating">
+        <svg width="30" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#D6C5AA" stroke="black" stroke-width="3"/></svg>
+        <svg width="30" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#D6C5AA" stroke="black" stroke-width="3"/></svg>
+        <svg width="30" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#D6C5AA" stroke="black" stroke-width="3"/></svg>
+        <svg width="30" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#D6C5AA" stroke="black" stroke-width="3"/></svg>
+        <svg width="30" viewBox="0 0 60 47" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.0976 44.7098C88.3891 18.3228 42.3982 -15.522 30.1727 12.586C15.6187 -16.0954 -22.2219 21.1911 24.9333 40.6948C21.4405 42.9894 23.187 45.9427 26.0976 44.7098Z" fill="#D6C5AA" fill-opacity="0.25" stroke="black" stroke-width="3"/></svg>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="sign-up-form">
+      <div style="display: flex; justify-content: space-between; width: 350px; position: absolute; left: 100px; top: 100px;">
+        <h1 onclick="signUp()">Sign up</h1>
+        <h1 onclick="login()">Login</h1>
+      </div>
+      <hr id="sign-up-nav-line" style="width: 130px; height: 5px; background-color: rgba(147, 109, 58, 1); position: absolute; top: 175px; left: 100px; border: none;">
+
+      <form id="form" action="/signUp" method="post">
+        <input class="inp" type="email" id="email" placeholder=" " required autocomplete="off" name="email">
+        <label for="email" id="email-label">Email</label>
+        <i id="email-icon" class='bx bxs-envelope' style="color: rgba(147, 109, 58, 1);"></i>
+
+        <input class="inp" type="password" id="password" placeholder=" " required autocomplete="off" name="password">
+        <label for="password" id="password-label">Password</label>
+        <i id="password-icon" class='bx bxs-lock-alt' style="color: rgba(147, 109, 58, 1);"></i>
+
+        <input class="inp" type="password" id="confirm-password" placeholder=" " required autocomplete="off" name="confirmPassword">
+        <label for="confirm-password" id="confirm-password-label">Confirm Password</label>
+        <i id="confirm-password-icon" class='bx bxs-lock-alt' style="color: rgba(147, 109, 58, 1);"></i>
+
+        <input type="submit" id="submit-sign-up" value="Sign up">
+      </form>
+      <img id="login-box" src="login-box.svg">
+    </div>
+
+    <p id="welcome" class="goes-left">Welcome to <br>Coffee Corner café!</p>
+    <p id="intro" class="goes-left">were we believe in the power of a good cup of
+      <br>coffee and the joy of a freshly baked pastry.</p>
+  </main>
+  <footer>
+    <div class="goes-left" id="sign-in-outer-box" style="display: flex; justify-content: center; align-items: center; position: absolute; top: 475px; left: -923px;">
+      <div id="sign-up-box" onclick="signUpBox()">
+        <p id="sign-up">Sign up</p>
+      </div>
+      <p id="never-miss">To never miss our<br>upcoming offers and events.</p>
+    </div>
+    <div class="goes-left" id="statics">
+      <div class="statics" id="menu-items">
+        <h1>50+</h1>
+        <p>Menu items</p>
+      </div>
+      <div class="statics" id="runnuing-orders">
+        <h1>20+</h1>
+        <p>Running orders</p>
+      </div>
+      <div class="statics" id="happy-customers">
+        <h1>2k+</h1>
+        <p>Happy customers</p>
+      </div>
+    </div>
+</footer>
+  
+  
+  
+  
+  <script src="index.js"></script>
+</body>
+</html>

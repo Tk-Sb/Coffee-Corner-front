@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inknut Antiqua", serif;
+    color: white;
+    user-select: none;
+    text-decoration: none;
+}
+body{
+    background-color: rgba(27, 17, 7, 1);
+    overflow: hidden;
+    height: 100vh;
+}
+.decoration{
+    position: absolute;
+}
+#bot{
+    top: 55vh;
+    left: -20px;
+    width: 550px;
+}
+#top{
+    left: 55vw;
+    width: 700px;
+}
+#back-text{
+    font-size: 200px;
+    line-height: 200px;
+    bottom: -10px;
+    right: 0px;
+    color: rgba(38, 29, 20, 1);
+    position: absolute;
+}
+#coffee{
+    position: absolute;
+    right: -1000px;
+    top: 150px;
+    width: 520px;
+}
+header{
+    position: absolute;
+    justify-content: center;
+    top: 60px;
+    left: 0px;
+    display: flex;
+    width: 100vw;
+    height: 75px;
+}
+#nav-bar{
+    display: flex;
+    align-content: center;
+    width: 90vw;
+    height: 75px;
+    border: 3px solid white;
+}
+#rating{
+    position: absolute;
+    display: flex;
+    align-content: center;
+    height: 80px;
+    left: 1275px;
+}
+#nav-bar h1{
+    left: 100px;
+    top: -1px;
+    position: absolute;
+}
+#nav-bar nav{
+    position: absolute;
+    left: 600px;
+    display: flex;
+    width: 600px;
+    height: 75px;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-bar nav h3{
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+#welcome{
+    position: absolute;
+    top: 175px;
+    line-height: 90px;
+    font-size: 64px;
+    left: -923px;
+}
+#intro{
+    position: absolute;
+    line-height: 50px;
+    font-size: 22px;
+    top: 350px;
+    left: -923px;
+}
+#sign-up-box{
+    cursor: pointer;
+    display: flex;
+    width: 175px;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-right: 20px;
+    background-color: rgba(209, 207, 205, 1);
+}
+#sign-up-box #sign-up{
+    font-size: 24px;
+    color: rgba(38, 29, 20, 1);;
+}
+#never-miss{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+#statics{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 925px;
+    height: 120px;
+    border: 3px solid white;
+    bottom: 25px;
+    left: -923px;
+}
+.statics{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.statics h1{
+    margin: -20px;
+}
+.statics p{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+}
+#sign-up-form{
+    position: absolute;
+    left: -1005px;
+    bottom: -14px;
+
+}
+#sign-up-form img{
+    width: 700px;
+}
+#sign-up-form .inp{
+    position: absolute;
+    border: none;
+    border-bottom: 5px solid rgba(147, 109, 58, 1);
+    background-color: transparent;
+    color: black;
+    text-indent: 75px;
+    font-size: 16px;
+    width: 350px;
+}
+#sign-up-form #email-label{
+    position: absolute;
+    top: 225px;
+    left: 175px;
+    color: rgba(147, 109, 58, 1);
+}
+#sign-up-form #email{
+    top: 225px;
+    left: 100px;
+}
+#sign-up-form #email:focus ~ #email-label{
+    visibility: hidden;
+}
+#sign-up-form #email:focus{
+    outline: none;
+}
+#sign-up-form #password-label{
+    position: absolute;
+    top: 310px;
+    left: 175px;
+    color: rgba(147, 109, 58, 1);
+}
+#sign-up-form #password{
+    top: 310px;
+    left: 100px;
+}
+#sign-up-form #password:focus ~ #password-label{
+    visibility: hidden;
+}
+#sign-up-form #password:focus{
+    outline: none;
+}
+#email:not(:placeholder-shown) ~ #email-label{
+    visibility: hidden;
+}
+#password:not(:placeholder-shown) ~ #password-label{
+    visibility: hidden;
+}
+
+#sign-up-form #confirm-password-label{
+    position: absolute;
+    top: 395px;
+    left: 175px;
+    color: rgba(147, 109, 58, 1);
+}
+#sign-up-form #confirm-password{
+    top: 395px;
+    left: 100px;
+}
+#sign-up-form #confirm-password:focus ~ #confirm-password-label{
+    visibility: hidden;
+}
+#sign-up-form #confirm-password:focus{
+    outline: none;
+}
+#confirm-password:not(:placeholder-shown) ~ #confirm-password-label{
+    visibility: hidden;
+}
+i{
+    font-size: 50px;
+    position: absolute;
+    top: 215px;
+    left: 100px;
+}
+#password-icon{
+    top: 300px;
+}
+#confirm-password-icon{
+    top: 385px;
+}
+#google-icon{
+    top: 510px;
+    left: 410px;
+}
+#facebook-icon{
+    top: 535px;
+    left: 475px;
+}
+#submit-sign-up{
+    position: absolute;
+    top: 475px;
+    left: 100px;
+    width: 175px;
+    height: 75px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(147, 109, 58, 1);
+    font-size: 24px;
+}
+#or{
+    position: absolute;
+    top: 500px;
+    left: 325px;
+}
+#user-not-found{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(190, 60, 20);
+}
